@@ -1,0 +1,108 @@
+body {
+  background-color: #f8e2e2;
+}
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #a87171;
+  width: 100%;
+  padding-top: 10px;
+}
+
+h1 {
+  margin-left: 10px;
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+}
+
+/* wrapper med flexbox */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 500px;
+  margin-left: 25%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  background-color: #d1a2a2;
+}
+
+/* olika login hälsningar beroende på rätt/fel */
+.logIn {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  color: #5a2626;
+}
+
+.wrongInlog {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  color: #5a2626;
+}
+
+.welcome {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  color: #5a2626;
+}
+
+/* inloggningsformulär */
+.password {
+  display: inline-block;
+}
+
+.username {
+  display: inline-block;
+}
+
+.passwordInput {
+  display: block;
+  width: 250px;
+  height: 20px;
+}
+
+.usernameInput {
+  display: block;
+  width: 250px;
+  height: 20px;
+}
+
+/* knappen */
+.button {
+  display: inline-block;
+  background-color: #742929;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 70px;
+  height: 50px;
+}
+
+/* footer */
+footer {
+  background-color: #a87171;
+  height: 50px;
+}
