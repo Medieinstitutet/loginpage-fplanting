@@ -9,17 +9,20 @@ header {
   background-color: #a87171;
   width: 100%;
   padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 h1 {
   margin-left: 10px;
-  font-family: "Sacramento", cursive;
-  font-size: 2.5rem;
+  font-family: "Meow Script", cursive;
+  color: #d3abab;
+  font-weight: normal;
+  font-size: 2rem;
 }
 
 img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   margin-left: 50px;
 }
 
@@ -42,7 +45,7 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1.5rem;
-  font-family: "Courgette", cursive;
+  font-family: "Amiri", serif;
   font-weight: bold;
   color: #5a2626;
 }
@@ -52,7 +55,7 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1.5rem;
-  font-family: "Courgette", cursive;
+  font-family: "Amiri", serif;
   font-weight: bold;
   color: #5a2626;
 }
@@ -62,7 +65,7 @@ img {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1.5rem;
-  font-family: "Courgette", cursive;
+  font-family: "Amiri", serif;
   font-weight: bold;
   color: #5a2626;
 }
