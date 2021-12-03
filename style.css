@@ -40,7 +40,7 @@ img {
 }
 
 /* olika login hälsningar beroende på rätt/fel */
-.logIn {
+.inlogText {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
