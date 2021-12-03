@@ -44,10 +44,13 @@ img {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 150px;
+  padding-left: 10px;
   font-size: 1.5rem;
   font-family: "Amiri", serif;
   font-weight: bold;
-  color: #5a2626;
+  color: #fff;
+  background-color: #5a2626;
 }
 
 .wrongInlog {
@@ -57,7 +60,7 @@ img {
   font-size: 1.5rem;
   font-family: "Amiri", serif;
   font-weight: bold;
-  color: #5a2626;
+  color: #c21919;
 }
 
 .welcome {
@@ -92,7 +95,19 @@ img {
 }
 
 /* knappen */
-.button {
+.buttonLogin {
+  display: inline-block;
+  background-color: #742929;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 70px;
+  height: 50px;
+}
+
+.buttonLogout {
   display: inline-block;
   background-color: #742929;
   color: #fff;
