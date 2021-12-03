@@ -13,7 +13,6 @@ const password = document.getElementById("password");
 //const passwordInput = document.getElementById("passwordInput");
 
 const buttonLogin = document.getElementById("buttonLogin");
-const buttonLogout = document.getElementById("buttonLogout");
 
 //printar ut de nya divs genom localstorage
 // min array/function printList();
@@ -49,10 +48,13 @@ buttonLogin.addEventListener("click", () => {
     let password = "test"
 
     if(usernameInput == username && passwordInput == password) {
-        document.getElementById("welcomeText").innerHTML = "Välkommen, du är inloggad";
+        document.getElementById("buttonLogin").innerHTML = "logga ut";
+        document.getElementById("welcomeText").innerHTML = "Välkommen, du är inloggad!";
+        console.group("inloggad")
     } else 
     {
         document.getElementById("wrongInlogText").innerHTML = "fel lösenord eller användarnamn";
+    console.log("fel lösenord")
     }
     console.log(buttonLogin)
 })
