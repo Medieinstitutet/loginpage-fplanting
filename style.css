@@ -41,7 +41,6 @@ img {
 
 /* olika login hälsningar beroende på rätt/fel */
 .inlogText {
-  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 10px;
@@ -52,7 +51,6 @@ img {
 }
 
 .wrongInlog {
-  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 2rem;
@@ -62,7 +60,6 @@ img {
 }
 
 .welcome {
-  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 1.5rem;
@@ -72,14 +69,6 @@ img {
 }
 
 /* inloggningsformulär */
-.password {
-  display: inline-block;
-}
-
-.username {
-  display: inline-block;
-}
-
 .passwordInput {
   display: block;
   width: 250px;
@@ -94,7 +83,6 @@ img {
 
 /* knappen */
 .buttonLogin {
-  display: inline-block;
   background-color: #742929;
   color: #fff;
   text-decoration: none;
@@ -106,7 +94,6 @@ img {
 }
 
 .buttonLogout {
-  display: inline-block;
   background-color: #742929;
   color: #fff;
   text-decoration: none;
@@ -118,7 +105,6 @@ img {
 }
 
 .buttonGetback {
-  display: inline-block;
   background-color: #742929;
   color: #fff;
   text-decoration: none;

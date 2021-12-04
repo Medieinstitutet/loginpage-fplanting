@@ -3,9 +3,21 @@ let buttonLogin = document.getElementById("buttonLogin");
 let buttonLogout = document.getElementById("buttonLogout");
 let buttonGetback = document.getElementById("buttonGetback");
 
-// funktion för min inlogg-knapp
+// så man kommer in på rätt vy
+updateView();
+
+// kallar en funktion till min logga-in-knapp
 buttonLogin.addEventListener("click", checkInlogSaveToLS)
 
+// kallar en funktion till min logga-ut-knapp
+buttonLogout.addEventListener("click", removeFromLS)
+
+function removeFromLS () {
+    localStorage.removeItem("user");
+    updateView();
+}
+
+//kallar en funktion till min gå-tillbaka-knapp
 
 // rätt eller fel inlogg sparas till LocalStorage
 function checkInlogSaveToLS () {
@@ -20,6 +32,7 @@ function checkInlogSaveToLS () {
         let userObject = {username: username, password: password};
 
         localStorage.setItem("user", JSON.stringify(userObject));
+        updateView();
 
     // uppdaterar vyn för fel inlogg
     } else {
