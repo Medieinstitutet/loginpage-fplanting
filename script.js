@@ -1,4 +1,24 @@
-console.log("inlogg");
+
+// rätt eller fel inlogg sparas till LocalStorage
+
+function checkInlogSaveToLS () {
+
+    let usernameInput = document.getElementById("usernameInput").value
+    let passwordInput = document.getElementById("passwordInput").value
+
+    let username = "janne"
+    let password = "test"
+
+    if(usernameInput == username && passwordInput == password) {
+        let userObject = {username: username, password: password};
+
+        localStorage.setItem("user", JSON.stringify(userObject));
+    } else {
+        console.log("fel användarnamn eller lösenord");
+    }
+}
+
+
 
 // döljer dessa knappar, ska bara synas vid vissa tillfällen
 document.getElementById("buttonLogout").style.display = "none";
