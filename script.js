@@ -7,10 +7,10 @@ let buttonGetback = document.getElementById("buttonGetback");
 updateView();
 
 // kallar en funktion till min logga-in-knapp
-buttonLogin.addEventListener("click", checkInlogSaveToLS)
+buttonLogin.addEventListener("click", checkInlogSaveToLS);
 
 // kallar en funktion till min logga-ut-knapp
-buttonLogout.addEventListener("click", removeFromLS)
+buttonLogout.addEventListener("click", removeFromLS);
 
 function removeFromLS () {
     localStorage.removeItem("user");
@@ -18,6 +18,7 @@ function removeFromLS () {
 }
 
 //kallar en funktion till min gå-tillbaka-knapp
+buttonGetback.addEventListener("click", updateView);
 
 // rätt eller fel inlogg sparas till LocalStorage
 function checkInlogSaveToLS () {
@@ -64,6 +65,10 @@ function updateView () {
         document.getElementById("viewInlogged").style.display = "none";
         document.getElementById("viewWronginlog").style.display = "none";
         document.getElementById("viewLogin").style.display = "block";
+
+        // tömmer det jag skrivit när jag loggar ut
+        document.getElementById("passwordInput").value = "";
+        document.getElementById("usernameInput").value = "";
     }
 }
 
